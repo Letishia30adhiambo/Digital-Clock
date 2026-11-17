@@ -1,16 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Clock</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="clock-container">
-    <h1>🕒 My Digital Clock</h1>
-    <div id="clock"></div>
-  </div>
-  <script src="script.js"></script>
+
+    <div class="clock-container">
+
+        <header class="header">
+            <h1>🕒 My Digital Clock</h1>
+            <p>Time is precious. Make the most of it! 💖</p>
+            <span class="live">🟢 LIVE</span>
+        </header>
+
+        <main>
+
+            <section class="clock-display">
+                <div id="clock">00:00:00</div>
+
+                <div class="format-buttons">
+                    <button id="btn12" class="active">12H</button>
+                    <button id="btn24">24H</button>
+                </div>
+            </section>
+
+            <section class="information">
+
+                <div class="info-card date-card">
+                    <span>📅</span>
+                    <div>
+                        <h2 id="day">Monday</h2>
+                        <p id="date">January 1, 2026</p>
+                    </div>
+                </div>
+
+                <div class="info-card location-card">
+                    <span>📍</span>
+                    <h2>Nairobi, Kenya</h2>
+                </div>
+
+                <div class="info-card greeting-card">
+                    <span>☀️</span>
+                    <div>
+                        <h2 id="greeting">Good Morning!</h2>
+                        <p>Have a great day! 😊</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="themes">
+                <h2>🎨 Choose Your Favourite Colour</h2>
+
+                <div class="theme-buttons">
+
+                    <button data-theme="purple">🟣 Purple</button>
+                    <button data-theme="blue">🔵 Blue</button>
+                    <button data-theme="green">🟢 Green</button>
+                    <button data-theme="pink">💗 Pink</button>
+                    <button data-theme="orange">🟠 Orange</button>
+                    <button data-theme="red">🔴 Red</button>
+                    <button data-theme="black">⚫ Black</button>
+                    <button data-theme="white">⚪ White</button>
+                    <button data-theme="maroon">🟥 Maroon</button>
+                    <button data-theme="darkblue">🔷 Dark Blue</button>
+                    <button data-theme="yellow">🟡 Yellow</button>
+                    <button data-theme="teal">🩵 Teal</button>
+                    <button data-theme="indigo">🟪 Indigo</button>
+                    <button data-theme="cyan">💠 Cyan</button>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            ⭐ Learn • Dream • Achieve ⭐
+            <p>© 2026 My Digital Clock</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
